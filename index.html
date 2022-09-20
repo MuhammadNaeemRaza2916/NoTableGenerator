@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberTableGenerator</title>
+</head>
+<body>
+    <h1>NumberTableGeneratorApp</h1>
+    <form onsubmit="generate(); return false">
+        Please enter any number to generate its table: <input type="number" id="no1" required>
+        <br>
+        Please enter multiplication length of table: <input type="number" id="no2" required>
+        <br>
+        <button type="submit">GenerateTable</button>
+    </form>
+
+    <h3 id="result"></h3>
+    <h3 id="result2"></h3>
+
+    <script>
+        function generate(){
+
+            let N1 = +document.querySelector("#no1").value;
+            
+            let N2 = +document.querySelector("#no2").value;
+            
+            document.write("Generated Table <br> <br>");
+
+            for(let i=0; i<N2; i++){
+                console.log(`${N1} X ${i+1} = ${(i+1)*N1}`);
+                document.write( `${N1} X ${i+1} = ${(i+1)*N1}`);
+                document.write("<br>");
+            }
+
+        }
+
+
+
+    </script>
+</body>
+</html>
