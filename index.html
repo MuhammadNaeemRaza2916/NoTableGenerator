@@ -7,13 +7,17 @@
     <title>NumberTableGenerator</title>
 </head>
 <body style="text-align:center; background-color:cornflowerblue; font-size:30px">
-    <h1>NumberTableGeneratorApp</h1>
+    
+
     <form onsubmit="generate(); return false" style="font-size:larger">
+        <fieldset style="background-color:brown; margin: 150px;">
+        <h1>NumberTableGeneratorApp</h1>
         Please enter any number to generate its table: <input type="number" id="no1" required>
         <br>
         Please enter multiplication length of table: <input type="number" id="no2" min="1" required>
         <br>
         <button type="submit">GenerateTable</button>
+    </fieldset>
     </form>
 
     <h3 id="result"></h3>
